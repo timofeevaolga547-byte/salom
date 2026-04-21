@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- Страница «Услуги» — карточки с фильтрацией -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Услуги салона красоты Lumière: стрижки, окрашивание, маникюр, спа и уходовые процедуры.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="../js/script.js" defer></script>
+    <title>Услуги — Lumière</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="../index.html">Lumière</a>
+        <nav>
+            <a href="../index.html">Главная</a>
+            <a href="../pages/about.html">О салоне</a>
+            <a href="../pages/destinations.html" class="active">Услуги</a>
+            <a href="../pages/tours.html">Мастера</a>
+            <a href="../pages/contacts.html">Контакты</a>
+        </nav>
+        <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars" aria-label="Меню"></i>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="centered">Услуги</h1>
+
+            <div class="page-hero">
+                <h2>Полный спектр услуг красоты</h2>
+                <p>
+                    От классических стрижек до трансформирующего окрашивания, от расслабляющего маникюра
+                    до глубоких спа-ритуалов — в Lumière вы найдёте всё для вашего преображения.
+                    Используйте фильтр, чтобы найти нужную категорию.
+                </p>
+            </div>
+
+            <!-- Фильтр карточек (JS-интерактивность) -->
+            <!-- Кнопки фильтра: при клике JS показывает/скрывает карточки с нужным data-tag -->
+            <div class="filter-bar" id="filter-bar">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="hair">✂ Волосы</button>
+                <button class="filter-btn" data-filter="color">🎨 Окрашивание</button>
+                <button class="filter-btn" data-filter="nails">💅 Ногти</button>
+                <button class="filter-btn" data-filter="face">✨ Уход за лицом</button>
+                <button class="filter-btn" data-filter="spa">◇ Спа</button>
+            </div>
+
+            <!-- Сетка карточек услуг -->
+            <div class="dest-grid">
+
+                <div class="dest-card" data-tag="hair">
+                    <img class="dest-card-img"
+                         src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80"
+                         alt="Женская стрижка и укладка">
+                    <div class="dest-card-body">
+                        <h3>Женская стрижка</h3>
+                        <p>Классические и авторские стрижки с укладкой. Консультация по форме лица включена.</p>
+                        <span class="dest-tag">Волосы</span>
+                    </div>
+                </div>
+
+                <div class="dest-card" data-tag="color">
+                    <img class="dest-card-img"
+                         src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80"
+                         alt="Окрашивание волос балаяж">
+                    <div class="dest-card-body">
+                        <h3>Балаяж и шатуш</h3>
+                        <p>Техника свободного мазка для натурального перехода цвета. Щадящий состав, долгий результат.</p>
+                        <span class="dest-tag">Окрашивание</span>
+                    </div>
+                </div>
+
+                <div class="dest-card" data-tag="nails">
+                    <img class="dest-card-img"
+                         src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80"
+                         alt="Маникюр и дизайн ногтей">
+                    <div class="dest-card-body">
+                        <h3>Маникюр & дизайн</h3>
+                        <p>Классический, аппаратный и художественный маникюр. Гель-лак, наращивание, nail-art.</p>
+                        <span class="dest-tag">Ногти</span>
+                    </div>
+                </div>
+
+                <div class="dest-card" data-tag="face">
+                    <img class="dest-card-img"
+                         src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80"
+                         alt="Уход за лицом и чистка">
+                    <div class="dest-card-body">
+                        <h3>Уход за лицом</h3>
+                        <p>Глубокое очищение, увлажнение и лифтинг-процедуры с профессиональной косметикой.</p>
+                        <span class="dest-tag">Уход за лицом</span>
+                    </div>
+                </div>
+
+                <div class="dest-card" data-tag="spa">
+                    <img class="dest-card-img"
+                         src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80"
+                         alt="Спа процедуры и релаксация">
+                    <div class="dest-card-body">
+                        <h3>Спа-ритуалы</h3>
+                        <p>Расслабляющие ритуалы для тела и кожи головы. Ароматерапия, обёртывания, массаж головы.</p>
+                        <span class="dest-tag">Спа</span>
+                    </div>
+                </div>
+
+                <div class="dest-card" data-tag="color">
+                    <img class="dest-card-img"
+                         src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?w=600&q=80"
+                         alt="Кератиновое выпрямление">
+                    <div class="dest-card-body">
+                        <h3>Кератиновое выпрямление</h3>
+                        <p>Реконструкция и разглаживание волос с профессиональными кератиновыми составами.</p>
+                        <span class="dest-tag">Окрашивание</span>
+                    </div>
+                </div>
+
+                <div class="dest-card" data-tag="hair">
+                    <img class="dest-card-img"
+                         src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80"
+                         alt="Мужская стрижка барбер">
+                    <div class="dest-card-body">
+                        <h3>Мужская стрижка</h3>
+                        <p>Классика и современные техники. Оформление бороды и усов. Уход за кожей лица.</p>
+                        <span class="dest-tag">Волосы</span>
+                    </div>
+                </div>
+
+                <div class="dest-card" data-tag="nails">
+                    <img class="dest-card-img"
+                         src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&q=80"
+                         alt="Педикюр и уход за стопами">
+                    <div class="dest-card-body">
+                        <h3>Педикюр & уход</h3>
+                        <p>Классический и аппаратный педикюр, SPA-педикюр с масками и уходом за кожей стоп.</p>
+                        <span class="dest-tag">Ногти</span>
+                    </div>
+                </div>
+
+                <div class="dest-card" data-tag="face">
+                    <img class="dest-card-img"
+                         src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80"
+                         alt="Макияж и визаж">
+                    <div class="dest-card-body">
+                        <h3>Визаж & макияж</h3>
+                        <p>Дневной и вечерний макияж, свадебный образ. Уроки макияжа с нашим визажистом.</p>
+                        <span class="dest-tag">Уход за лицом</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="info-block">
+                <h2>Индивидуальные программы</h2>
+                <p>
+                    Мы разрабатываем персональные уходовые программы для регулярных клиентов.
+                    На первичной консультации наш специалист оценит состояние ваших волос или кожи
+                    и составит план процедур для достижения наилучшего результата.
+                </p>
+                <ul class="info-list">
+                    <li>Программы восстановления повреждённых волос</li>
+                    <li>Антивозрастные уходовые курсы для кожи лица</li>
+                    <li>Свадебный пакет — полное преображение к торжеству</li>
+                    <li>Сезонный уход и профилактика</li>
+                </ul>
+                <p class="iconite-line">
+                    <iconify-icon icon="mdi:diamond-outline" width="18" height="18" style="color:var(--gold);"></iconify-icon>
+                    Карта постоянного клиента — скидки и привилегии.
+                </p>
+            </div>
+
+            <p style="text-indent:0; margin-top:24px;">
+                Вдохновение и идеи образов:
+                <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" style="color:var(--rose-light); border-bottom:1px solid rgba(201,132,138,0.4); text-decoration:none; padding-bottom:2px;">
+                    Pinterest <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:11px;"></i>
+                </a>
+            </p>
+
+            <a href="#" style="color:var(--muted); font-size:13px; letter-spacing:1px; text-decoration:none;">↑ Вернуться к началу</a>
+        </section>
+    </main>
+
+    <footer>
+        <span>© Lumière Beauty Salon — <span id="footer-year">2026</span></span>
+    </footer>
+
+    <div id="back-top" title="Наверх">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+</body>
+</html>

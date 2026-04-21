@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Страница «О салоне» — история, аудио и видео -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="О салоне красоты Lumière — история, ценности и команда.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="../js/script.js" defer></script>
+    <title>О салоне — Lumière</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="../index.html">Lumière</a>
+        <nav>
+            <a href="../index.html">Главная</a>
+            <a href="../pages/about.html" class="active">О салоне</a>
+            <a href="../pages/destinations.html">Услуги</a>
+            <a href="../pages/tours.html">Мастера</a>
+            <a href="../pages/contacts.html">Контакты</a>
+        </nav>
+        <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars" aria-label="Меню"></i>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="centered">О салоне</h1>
+
+            <div class="page-hero">
+                <h2>Lumière — пространство вашей красоты</h2>
+                <p>
+                    Мы — команда увлечённых профессионалов, объединённых одной целью: помочь каждому
+                    клиенту почувствовать себя красивым, ухоженным и уверенным. Каждая процедура
+                    в Lumière — это продуманный ритуал с вниманием к деталям.
+                </p>
+            </div>
+
+            <p>
+                Салон Lumière открылся в Кишинёве в 2018 году. За эти годы мы создали пространство,
+                где профессионализм сочетается с настоящей заботой о клиенте. Мы постоянно следим
+                за трендами индустрии красоты и первыми внедряем новые техники и продукты.
+            </p>
+            <p>
+                Наш интерьер выполнен в минималистичном стиле, создающем атмосферу спокойствия
+                и элегантности. Здесь можно по-настоящему расслабиться и доверить себя рукам
+                мастеров с многолетним опытом.
+            </p>
+
+            <h2>Наши принципы</h2>
+            <ul class="info-list">
+                <li>Профессионализм и постоянное обучение команды</li>
+                <li>Только сертифицированная косметика премиум-класса</li>
+                <li>Индивидуальный подбор услуг для каждого клиента</li>
+                <li>Честные цены и прозрачность в общении</li>
+                <li>Забота о здоровье волос и кожи, а не только о внешнем результате</li>
+                <li>Экологичные и этичные продукты без вредных компонентов</li>
+            </ul>
+
+            <div class="info-block">
+                <h2>Наша философия</h2>
+                <p>
+                    Красота — это не маска, а состояние изнутри. Мы верим, что правильный уход
+                    и профессиональные процедуры способны не просто изменить внешность, но
+                    и поднять настроение, вернуть уверенность в себе и зарядить энергией на весь день.
+                </p>
+                <p>
+                    В Lumière каждый клиент — это история. Мы помним ваши предпочтения,
+                    следим за состоянием ваших волос и кожи, и всегда готовы предложить
+                    именно то, что вам нужно сегодня.
+                </p>
+                <p class="iconite-line">
+                    <iconify-icon icon="mdi:star-four-points-outline" width="18" height="18" style="color:var(--gold);"></iconify-icon>
+                    Красота начинается с заботы о себе.
+                </p>
+            </div>
+
+            <!-- Аудио-элемент — релакс атмосфера салона -->
+
+            <!-- Видео-элемент — обзор салона -->
+            <div class="video-block" style="margin-top:30px;">
+                <h2>🎬 Добро пожаловать в Lumière</h2>
+                <!-- Элемент video с атрибутами управления -->
+                <video controls poster="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=900&q=60">
+                    <source src="../video/puti.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает воспроизведение видео.
+                </video>
+            </div>
+
+            <!-- YouTube iframe — уходовые советы -->
+            <br>
+
+        </section>
+    </main>
+
+    <footer>
+        <span>© Lumière Beauty Salon — <span id="footer-year">2026</span></span>
+    </footer>
+
+    <div id="back-top" title="Наверх">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+</body>
+</html>

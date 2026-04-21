@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- Главная страница — Lumière Beauty Salon -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lumière — салон красоты в Кишинёве. Профессиональный уход, стрижки, окрашивание, маникюр и спа.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <title>Lumière — Салон красоты</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Lumière</a>
+        <nav>
+            <a href="index.html" class="active">Главная</a>
+            <a href="pages/about.html">О салоне</a>
+            <a href="pages/destinations.html">Услуги</a>
+            <a href="pages/tours.html">Мастера</a>
+            <a href="pages/contacts.html">Контакты</a>
+        </nav>
+        <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars" aria-label="Меню"></i>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-inner">
+                <p class="hero-eyebrow">Салон красоты в Кишинёве</p>
+                <h1>Lumière</h1>
+                <p class="hero-tagline">Искусство красоты. Ваш момент совершенства.</p>
+                <div class="hero-btns">
+                    <a href="pages/destinations.html" class="btn-primary">Наши услуги</a>
+                    <a href="#stats" class="btn-outline">О салоне</a>
+                </div>
+                <div class="quick-links">
+                    <a href="pages/tours.html">Наши мастера</a>
+                    <a href="pages/contacts.html">Записаться онлайн</a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats">
+            <h2 class="centered">Lumière в цифрах</h2>
+            <p class="centered" style="color:var(--muted); font-size:13px; letter-spacing:1.5px; text-transform:uppercase;">Работаем с 2018 года</p>
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-num" data-count="3200">0</span>
+                    <p class="stat-label">Довольных клиентов</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-count="40">0</span>
+                    <p class="stat-label">Видов услуг</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-count="7">0</span>
+                    <p class="stat-label">Лет опыта</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-count="12">0</span>
+                    <p class="stat-label">Мастеров</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2 class="centered">Почему выбирают нас</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">✦</span>
+                    <h3>Премиум качество</h3>
+                    <p>Используем только профессиональную косметику ведущих мировых брендов.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">◈</span>
+                    <h3>Опытные мастера</h3>
+                    <p>Каждый специалист прошёл международную сертификацию и регулярно повышает квалификацию.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">❋</span>
+                    <h3>Индивидуальный подход</h3>
+                    <p>Консультация и подбор процедур под ваш тип волос, кожи и пожелания.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">◇</span>
+                    <h3>Атмосфера уюта</h3>
+                    <p>Пространство создано для полного расслабления и восстановления сил.</p>
+                </div>
+            </div>
+            <p style="margin-top:36px; text-align:center;">
+                Хотите узнать больше?
+                <a href="#useful-links" style="color:var(--rose-light); font-weight:500; border-bottom:1px solid rgba(201,132,138,0.4); text-decoration:none; padding-bottom:2px;">Перейти ↓</a>
+            </p>
+        </section>
+
+        <section id="useful-links">
+            <h2 class="centered">Навигация и ресурсы</h2>
+            <p style="text-align:center;">Всё необходимое для записи и знакомства с нами.</p>
+            <div class="info-block">
+                <h2>Ресурсы</h2>
+                <ul class="info-list">
+                    <li><a href="pages/about.html" style="color:var(--rose-light);">О салоне Lumière</a></li>
+                    <li><a href="pages/tours.html" style="color:var(--rose-light);">Наши мастера</a></li>
+                    <li><a href="pages/contacts.html" style="color:var(--rose-light);">Записаться на процедуру</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style="color:var(--rose-light);">Instagram салона (внешний ресурс)</a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" style="color:var(--rose-light);">Pinterest — идеи образов</a></li>
+                    <li><a href="#hero" style="color:var(--gold);">↑ Вернуться к началу страницы</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>© Lumière Beauty Salon — <span id="footer-year">2026</span></span>
+        &nbsp;|&nbsp;
+        <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Validator</a>
+    </footer>
+
+    <div id="back-top" title="Наверх">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+</body>
+</html>

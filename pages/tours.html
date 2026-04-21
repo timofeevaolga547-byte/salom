@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- Страница «Мастера» — описание специалистов и таблица услуг -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Мастера салона красоты Lumière — профессионалы с опытом и сертификатами.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="../js/script.js" defer></script>
+    <title>Мастера — Lumière</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="../index.html">Lumière</a>
+        <nav>
+            <a href="../index.html">Главная</a>
+            <a href="../pages/about.html">О салоне</a>
+            <a href="../pages/destinations.html">Услуги</a>
+            <a href="../pages/tours.html" class="active">Мастера</a>
+            <a href="../pages/contacts.html">Контакты</a>
+        </nav>
+        <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars" aria-label="Меню"></i>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="centered">Наши мастера</h1>
+
+            <p style="text-align:center; color:var(--muted); font-size:13px; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:40px;">
+                Команда профессионалов, которым можно доверять
+            </p>
+
+            <!-- Мастер 1 -->
+            <div class="tour-item">
+                <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=400&q=80"
+                     alt="Анна — старший стилист-колорист">
+                <div class="tour-item-body">
+                    <h2>Анна Морару — старший стилист</h2>
+                    <p>
+                        Более 10 лет в индустрии. Специализируется на сложном окрашивании, балаяже и трансформации
+                        образа. Сертифицированный колорист Wella Professionals и L'Oréal Professionnel.
+                        Регулярно проходит обучение в Милане и Париже.
+                    </p>
+                    <span class="tour-price">Окрашивание, стрижка, укладка</span>
+                </div>
+            </div>
+
+            <!-- Мастер 2 -->
+            <div class="tour-item">
+                <img src="data:image/jpeg;base64,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""
+                     alt="Елена — мастер маникюра">
+                <div class="tour-item-body">
+                    <h2>Елена Ковалева — мастер ногтей</h2>
+                    <p>
+                        8 лет практики. Виртуоз nail-art и сложного дизайна. Работает с ведущими гель-лаковыми
+                        системами. Победитель регионального конкурса по маникюру 2023 года. Принимает по
+                        предварительной записи.
+                    </p>
+                    <span class="tour-price">Маникюр, педикюр, дизайн</span>
+                </div>
+            </div>
+
+            <!-- Мастер 3 -->
+            <div class="tour-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxO-yO66D8ZUqPwnyvW9_vqwFCJVcfCeA49A&s"
+                     alt="Мария — спа-специалист и косметолог">
+                <div class="tour-item-body">
+                    <h2>Мария Бэлан — спа & косметолог</h2>
+                    <p>
+                        Дипломированный косметолог с 6-летним стажем. Специализируется на антивозрастных
+                        уходах, лимфодренажном массаже и спа-ритуалах для тела. Использует технику
+                        биоревитализации и мезотерапии лица.
+                    </p>
+                    <span class="tour-price">Уход за лицом, спа-ритуалы, массаж</span>
+                </div>
+            </div>
+
+            <!-- Мастер 4 -->
+            <div class="tour-item">
+                <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=400&q=80"
+                     alt="Дмитрий — барбер">
+                <div class="tour-item-body">
+                    <h2>Дмитрий Попеску — барбер</h2>
+                    <p>
+                        Профессиональный барбер с образованием из Лондонского барбер-колледжа. Мастер
+                        классических и современных мужских стрижек, работы с бородой. Создаёт идеальный
+                        мужской образ — от casual до делового.
+                    </p>
+                    <span class="tour-price">Мужские стрижки, борода, уход</span>
+                </div>
+            </div>
+
+            <!-- Мастер 5 -->
+            <div class="tour-item">
+                <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&q=80"
+                     alt="Виктория — визажист">
+                <div class="tour-item-body">
+                    <h2>Виктория Луну — визажист</h2>
+                    <p>
+                        Визажист с портфолио более 500 свадебных и вечерних образов. Обучалась в
+                        Москве и Бухаресте. Владеет техниками airbrushing, smoky eye и натурального
+                        макияжа no-makeup. Проводит индивидуальные уроки.
+                    </p>
+                    <span class="tour-price">Макияж, уроки визажа</span>
+                </div>
+            </div>
+
+            <div class="info-block">
+                <h2>Как записаться к мастеру?</h2>
+                <p>Запись проходит быстро и удобно:</p>
+                <ul class="info-list">
+                    <li>Выберите мастера и нужную услугу</li>
+                    <li>Позвоните или заполните форму на странице контактов</li>
+                    <li>Подтвердите дату и время визита</li>
+                    <li>Получите напоминание за день до записи</li>
+                    <li>Наслаждайтесь результатом!</li>
+                </ul>
+            </div>
+
+            <!-- Таблица прайс-листа -->
+            <h2 class="centered" style="margin-top:50px;">Примерный прайс-лист</h2>
+
+            <div class="table-wrap">
+                <table class="tour-table">
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th>Длительность</th>
+                            <th>Специалист</th>
+                            <th>Включено</th>
+                            <th>Цена от (MDL)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Женская стрижка</td>
+                            <td>60–90 мин</td>
+                            <td>Анна / любой мастер</td>
+                            <td>Мытьё + укладка</td>
+                            <td>350</td>
+                        </tr>
+                        <tr>
+                            <td>Балаяж / шатуш</td>
+                            <td>3–4 часа</td>
+                            <td>Анна</td>
+                            <td>Консультация + уход</td>
+                            <td>1 800</td>
+                        </tr>
+                        <tr>
+                            <td>Маникюр + гель-лак</td>
+                            <td>90 мин</td>
+                            <td>Елена</td>
+                            <td>Дизайн на выбор</td>
+                            <td>450</td>
+                        </tr>
+                        <tr>
+                            <td>Уход за лицом</td>
+                            <td>60 мин</td>
+                            <td>Мария</td>
+                            <td>Пилинг + маска</td>
+                            <td>700</td>
+                        </tr>
+                        <tr>
+                            <td>Спа-ритуал</td>
+                            <td>90 мин</td>
+                            <td>Мария</td>
+                            <td>Массаж + обёртывание</td>
+                            <td>1 200</td>
+                        </tr>
+                        <tr>
+                            <td>Мужская стрижка</td>
+                            <td>45 мин</td>
+                            <td>Дмитрий</td>
+                            <td>Укладка + финиш</td>
+                            <td>280</td>
+                        </tr>
+                        <tr>
+                            <td>Свадебный макияж</td>
+                            <td>2 часа</td>
+                            <td>Виктория</td>
+                            <td>Пробный образ</td>
+                            <td>1 500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p style="text-indent:0; margin-top:24px;">
+                Идеи образов:
+                <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer"
+                   style="color:var(--rose-light); border-bottom:1px solid rgba(201,132,138,0.4); text-decoration:none; padding-bottom:2px;">
+                    Pinterest <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:11px;"></i>
+                </a>
+            </p>
+
+            <a href="#" style="color:var(--muted); font-size:13px; letter-spacing:1px; text-decoration:none;">↑ Вернуться к началу</a>
+        </section>
+    </main>
+
+    <footer>
+        <span>© Lumière Beauty Salon — <span id="footer-year">2026</span></span>
+    </footer>
+
+    <div id="back-top" title="Наверх">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+</body>
+</html>
